@@ -1,4 +1,4 @@
- * {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,4 +71,36 @@
 
 footer {
   background: #0d6efd;
-  co
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+ .details-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.details-btn:hover {
+  background: #0b5ed7;
+}
+
+.description {
+  display: none;
+  text-align: left;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.description.show {
+  display: block;
+}
