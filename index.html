@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,18 +30,41 @@
   <section class="courses" id="courses">
     <h2>Our Courses</h2>
     <div class="course-cards">
+<div class="card">
+  <h3>Digital Logic Design</h3>
+  <p>Learn Boolean Algebra, Logic Gates & more</p>
+  <button class="details-btn" onclick="toggleDetails('desc1')">View Details</button>
+  <p class="description" id="desc1">
+    This course covers Boolean Algebra laws (Identity, Null, Idempotent, 
+    Complement, De Morgan's Theorem), Logic Gates (AND, OR, NOT, NAND, NOR, XOR), 
+    Karnaugh Maps (K-Map), Combinational and Sequential circuits. Perfect for 
+    engineering students studying Digital Logic Design (DLD).
+  </p>
+</div>
+        <div class="card">
+  <h3>Web Development</h3>
+  <p>HTML, CSS, JavaScript from scratch</p>
+  <button class="details-btn" onclick="toggleDetails('desc2')">View Details</button>
+  <p class="description" id="desc2">
+    Learn how to build websites from scratch using HTML for structure, 
+    CSS for styling, and JavaScript for interactivity. Includes responsive 
+    design, forms, animations, and how to deploy your website live using 
+    GitHub Pages.
+  </p>
+</div>
       <div class="card">
-        <h3>Digital Logic Design</h3>
-        <p>Learn Boolean Algebra, Logic Gates & more</p>
-      </div>
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript from scratch</p>
-      </div>
-      <div class="card">
-        <h3>Data Structures</h3>
-        <p>Master DSA for interviews</p>
-      </div>
+  <h3>Data Structures</h3>
+  <p>Master DSA for interviews</p>
+  <button class="details-btn" onclick="toggleDetails('desc3')">View Details</button>
+  <p class="description" id="desc3">
+    Master essential data structures like Arrays, Linked Lists, Stacks, 
+    Queues, Trees, and Graphs, along with algorithms like sorting and 
+    searching. This course prepares you for coding interviews and 
+    competitive programming.
+  </p>
+</div>
+      
+      
     </div>
   </section>
 
