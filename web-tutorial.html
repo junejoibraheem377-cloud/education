@@ -4,20 +4,528 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Web Development Tutorial - EduLearn</title>
+
 <link rel="stylesheet" href="dld-tutorial.css">
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
-    <a href="index.html" class="back-link">← Back to Home</a>
-  </nav>
+<nav class="navbar">
 
-  <div class="tutorial-container">
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
 
-    <div class="sidebar">
-      <h3>Web Dev Topics</h3>
+  <a href="index.html" class="back-link">
+    ← Back to Home
+  </a>
+
+</nav>
+
+
+<div class="tutorial-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h3>Web Development</h3>
+
+    <ul>
+
+      <li>
+        <a href="#" class="topic-link active"
+        onclick="showLesson('intro', this)">
+        1. Introduction
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('html', this)">
+        2. HTML
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('elements', this)">
+        3. HTML Elements
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('forms', this)">
+        4. HTML Forms
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('css', this)">
+        5. CSS
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('selectors', this)">
+        6. CSS Selectors
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('flexbox', this)">
+        7. Flexbox & Grid
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('responsive', this)">
+        8. Responsive Design
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('javascript', this)">
+        9. JavaScript
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('dom', this)">
+        10. DOM
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('events', this)">
+        11. JavaScript Events
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('storage', this)">
+        12. Local Storage
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('github', this)">
+        13. Git & GitHub
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('project', this)">
+        14. Mini Project
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- CONTENT -->
+  <div class="content">
+
+
+    <!-- INTRODUCTION -->
+    <div id="intro" class="lesson active">
+
+      <h1>Introduction to Web Development</h1>
+
+      <p>
+        Web Development ka matlab websites aur web applications
+        banana hai.
+      </p>
+
+      <h2>Main Technologies</h2>
+
       <ul>
-        <li><a href="#" class="topic-link active" onclick="showLesson('intro')">1. Introduction</a></li>
-        <li><a href="#" class="topic-link" onclick="showLesson('html')">2. HTML Basics</a></li>
-        <li><a href="#" class="topic-link" onclick="showLesson('css')">3. CSS Basics</a></li>
+        <li>HTML – Website ka structure</li>
+        <li>CSS – Website ka design</li>
+        <li>JavaScript – Website ki functionality</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Ek website mein HTML structure banata hai,
+        CSS usko beautiful banata hai aur JavaScript
+        interaction add karta hai.
+      </div>
+
+    </div>
+
+
+    <!-- HTML -->
+    <div id="html" class="lesson">
+
+      <h1>HTML</h1>
+
+      <p>
+        HTML ka full form
+        <strong>HyperText Markup Language</strong> hai.
+      </p>
+
+      <p>
+        HTML website ka basic structure banane ke liye
+        use hoti hai.
+      </p>
+
+      <h2>Basic HTML Example</h2>
+
+      <div class="example-box">
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+        <br>
+        &lt;p&gt;My first website&lt;/p&gt;
+      </div>
+
+    </div>
+
+
+    <!-- HTML ELEMENTS -->
+    <div id="elements" class="lesson">
+
+      <h1>HTML Elements</h1>
+
+      <p>
+        HTML elements website ke different parts ko
+        define karte hain.
+      </p>
+
+      <h2>Common Elements</h2>
+
+      <ul>
+        <li>&lt;h1&gt; – Heading</li>
+        <li>&lt;p&gt; – Paragraph</li>
+        <li>&lt;a&gt; – Link</li>
+        <li>&lt;img&gt; – Image</li>
+        <li>&lt;button&gt; – Button</li>
+        <li>&lt;div&gt; – Container</li>
+      </ul>
+
+    </div>
+
+
+    <!-- FORMS -->
+    <div id="forms" class="lesson">
+
+      <h1>HTML Forms</h1>
+
+      <p>
+        HTML Forms user se information lene ke liye
+        use hoti hain.
+      </p>
+
+      <h2>Common Form Elements</h2>
+
+      <ul>
+        <li>Input</li>
+        <li>Label</li>
+        <li>Select</li>
+        <li>Textarea</li>
+        <li>Button</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Login form mein username aur password ke
+        input fields ho sakte hain.
+      </div>
+
+    </div>
+
+
+    <!-- CSS -->
+    <div id="css" class="lesson">
+
+      <h1>CSS</h1>
+
+      <p>
+        CSS ka full form
+        <strong>Cascading Style Sheets</strong> hai.
+      </p>
+
+      <p>
+        CSS website ko colors, fonts, spacing aur layout
+        provide karti hai.
+      </p>
+
+      <h2>Example</h2>
+
+      <div class="example-box">
+        h1 {
+        <br>
+        &nbsp;&nbsp;color: blue;
+        <br>
+        }
+      </div>
+
+    </div>
+
+
+    <!-- SELECTORS -->
+    <div id="selectors" class="lesson">
+
+      <h1>CSS Selectors</h1>
+
+      <p>
+        CSS selectors HTML elements ko select karke
+        un par styling apply karte hain.
+      </p>
+
+      <h2>Common Selectors</h2>
+
+      <ul>
+        <li>Element Selector</li>
+        <li>Class Selector</li>
+        <li>ID Selector</li>
+        <li>Universal Selector</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        .button { color: white; }
+      </div>
+
+    </div>
+
+
+    <!-- FLEXBOX -->
+    <div id="flexbox" class="lesson">
+
+      <h1>Flexbox & Grid</h1>
+
+      <p>
+        Flexbox aur CSS Grid website ke layout ko
+        arrange karne ke liye use hote hain.
+      </p>
+
+      <h2>Flexbox</h2>
+
+      <p>
+        Flexbox elements ko row ya column mein
+        easily arrange karta hai.
+      </p>
+
+      <h2>Grid</h2>
+
+      <p>
+        CSS Grid rows aur columns ke form mein
+        layout create karta hai.
+      </p>
+
+    </div>
+
+
+    <!-- RESPONSIVE -->
+    <div id="responsive" class="lesson">
+
+      <h1>Responsive Design</h1>
+
+      <p>
+        Responsive Design ka matlab website ko
+        mobile, tablet aur computer screens par
+        properly display karna hai.
+      </p>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Media Queries responsive websites banane ke
+        liye commonly use hoti hain.
+      </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <div id="javascript" class="lesson">
+
+      <h1>JavaScript</h1>
+
+      <p>
+        JavaScript ek programming language hai jo
+        website ko interactive banati hai.
+      </p>
+
+      <h2>JavaScript se kya kar sakte hain?</h2>
+
+      <ul>
+        <li>Button click handle karna</li>
+        <li>Form validation</li>
+        <li>HTML content change karna</li>
+        <li>Calculations karna</li>
+        <li>Dynamic websites banana</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Button click karne par message show karna.
+      </div>
+
+    </div>
+
+
+    <!-- DOM -->
+    <div id="dom" class="lesson">
+
+      <h1>DOM</h1>
+
+      <p>
+        DOM ka full form
+        <strong>Document Object Model</strong> hai.
+      </p>
+
+      <p>
+        JavaScript DOM ke through HTML elements ko
+        access aur change kar sakti hai.
+      </p>
+
+      <div class="example-box">
+        document.getElementById("demo")
+      </div>
+
+    </div>
+
+
+    <!-- EVENTS -->
+    <div id="events" class="lesson">
+
+      <h1>JavaScript Events</h1>
+
+      <p>
+        Events user ke actions hote hain jinhein
+        JavaScript detect kar sakti hai.
+      </p>
+
+      <h2>Common Events</h2>
+
+      <ul>
+        <li>click</li>
+        <li>mouseover</li>
+        <li>keydown</li>
+        <li>submit</li>
+        <li>change</li>
+      </ul>
+
+    </div>
+
+
+    <!-- LOCAL STORAGE -->
+    <div id="storage" class="lesson">
+
+      <h1>Local Storage</h1>
+
+      <p>
+        Local Storage browser mein data save karne
+        ke liye use hoti hai.
+      </p>
+
+      <p>
+        Browser refresh hone ke baad bhi saved data
+        available reh sakta hai.
+      </p>
+
+      <div class="example-box">
+        localStorage.setItem("name", "Ali");
+      </div>
+
+    </div>
+
+
+    <!-- GITHUB -->
+    <div id="github" class="lesson">
+
+      <h1>Git & GitHub</h1>
+
+      <p>
+        Git ek version control system hai jo code ke
+        changes ko manage karta hai.
+      </p>
+
+      <p>
+        GitHub ek online platform hai jahan developers
+        apna code store aur share kar sakte hain.
+      </p>
+
+      <h2>Common Git Commands</h2>
+
+      <ul>
+        <li>git init</li>
+        <li>git add</li>
+        <li>git commit</li>
+        <li>git push</li>
+      </ul>
+
+    </div>
+
+
+    <!-- PROJECT -->
+    <div id="project" class="lesson">
+
+      <h1>Mini Web Development Project</h1>
+
+      <p>
+        Course ke end par ek small website project
+        banaya ja sakta hai.
+      </p>
+
+      <h2>Project Technologies</h2>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Project Example:</strong>
+        Student Management System, Portfolio Website
+        ya simple Education Website.
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<script>
+
+function showLesson(id, element) {
+
+  const lessons = document.querySelectorAll(".lesson");
+
+  lessons.forEach(function(lesson) {
+    lesson.classList.remove("active");
+  });
+
+  document.getElementById(id).classList.add("active");
+
+
+  const links = document.querySelectorAll(".topic-link");
+
+  links.forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  element.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
