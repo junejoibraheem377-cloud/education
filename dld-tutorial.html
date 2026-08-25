@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DLD Tutorial - EduLearn</title>
+<link rel="stylesheet" href="dld-tutorial.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </nav>
+
+  <div class="tutorial-container">
+
+    <div class="sidebar">
+      <h3>DLD Topics</h3>
+      <ul>
+        <li><a href="#" class="topic-link active" onclick="showLesson('intro')">1. Introduction</a></li>
+        <li><a href="#" class="topic-link" onclick="showLesson('laws')">2. Boolean Laws</a></li>
+        <li><a href="#" class="topic-link" onclick="showLesson('demorgan')">3. De Morgan's Theorem</a></li>
+        <li><a href="#" class="topic-link" onclick="showLesson('gates')">4. Logic Gates</a></li>
+        <li><a href="#" class="topic-link" onclick="showLesson('kmap')">5. Karnaugh Map</a></li>
+        <li><a href="#" class="topic-link" onclick="showLesson('circuits')">6. Circuits</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+
+      <div id="intro" class="lesson active">
+        <h1>Introduction to Boolean Algebra</h1>
+        <p>Boolean Algebra sirf 2 values pe kaam karti hai: <b>0</b> aur <b>1</b>.</p>
+        <p>Isme 3 basic operations hote hain:</p>
+        <ul>
+          <li><b>OR (+)</b> — dono mein se ek bhi 1 ho to result 1</li>
+          <li><b>AND (·)</b> — dono 1 hon tabhi result 1</li>
+          <li><b>NOT (')</b> — value ko ulta karta hai (0→1, 1→0)</li>
+        </ul>
+        <div class="example-box">
+          <b>Example:</b> A=1, B=0 <br>
+          A+B = 1 (OR) &nbsp;|&nbsp; A·B = 0 (AND) &nbsp;|&nbsp; A' = 0 (NOT)
+        </div>
+      </div>
+
+      <div id="laws" class="lesson">
+        <h1>Boolean Algebra Laws</h1>
+        <h2>Identity Law</h2>
+        <p>A+0=A &nbsp; | &nbsp; A·1=A</p>
+        <h2>Null Law</h2>
+        <p>A+1=1 &nbsp; | &nbsp; A·0=0</p>
+        <h2>Idempotent Law</h2>
+        <p>A+A=A &nbsp; | &nbsp; A·A=A</p>
+        <h2>Complement Law</h2>
+        <p>A+A'=1 &nbsp; | &nbsp; A·A'=0</p>
+        <div class="example-box">
+          <b>Tip:</b> Idempotent = same variable repeat, Null = fixed result, Identity = variable as-is.
+        </div>
+      </div>
+
+      <div id="demorgan" class="lesson">
+        <h1>De Morgan's Theorem</h1>
+        <p>Do important rules complement nikalne ke liye:</p>
+        <div class="example-box">
+          (A+B)' = A'·B' <br>
+          (A·B)' = A'+B'
+        </div>
+        <p>Matlab: OR ko AND banao (ya AND ko OR), aur har variable ka complement le lo.</p>
+      </div>
+
+      <div id="gates" class="lesson">
+        <h1>Logic Gates</h1>
+        <p>Logic gates Boolean operations ko physical circuits mein represent karte hain:</p>
+        <ul>
+          <li><b>AND Gate</b> — output 1 tab jab sab input 1 hon</li>
+          <li><b>OR Gate</b> — output 1 tab jab koi bhi ek input 1 ho</li>
+          <li><b>NOT Gate</b> — input ko invert karta hai</li>
+          <li><b>NAND Gate</b> — AND ka opposite</li>
+          <li><b>NOR Gate</b> — OR ka opposite</li>
+          <li><b>XOR Gate</b> — output 1 jab inputs different hon</li>
+        </ul>
+      </div>
+
+      <div id="kmap" class="lesson">
+        <h1>Karnaugh Map (K-Map)</h1>
+        <p>K-Map ek graphical method hai Boolean expressions ko <b>simplify</b> karne ka.</p>
+        <p>Ye truth table ki jagah grid use karta hai, jisme adjacent cells sirf 1 bit se differ karte hain — isse simplification easy ho jaati hai.</p>
+      </div>
+
+      <div id="circuits" class="lesson">
+        <h1>Combinational & Sequential Circuits</h1>
+        <p><b>Combinational Circuits:</b> Output sirf current input pe depend karta hai (jaise Adder, Multiplexer).</p>
+        <p><b>Sequential Circuits:</b> Output current input + past state pe depend karta hai (jaise Flip-Flops, Counters). Inme memory hoti hai.</p>
+      </div>
+
+    </div>
+  </div>
+
+<script src="dld-tutorial.js"></script>
+</body>
+</html>
