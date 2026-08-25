@@ -4,18 +4,476 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Data Structures Tutorial - EduLearn</title>
+
 <link rel="stylesheet" href="dld-tutorial.css">
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <div class="logo"><img src="logo.jpg" alt="Logo"></div>
-    <a href="index.html" class="back-link">← Back to Home</a>
-  </nav>
+<nav class="navbar">
 
-  <div class="tutorial-container">
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
 
-    <div class="sidebar">
-      <h3>DSA Topics</h3>
+  <a href="index.html" class="back-link">
+    ← Back to Home
+  </a>
+
+</nav>
+
+
+<div class="tutorial-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h3>DSA Topics</h3>
+
+    <ul>
+
+      <li>
+        <a href="#" class="topic-link active"
+        onclick="showLesson('intro', this)">
+        1. Introduction
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('array', this)">
+        2. Arrays
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('linkedlist', this)">
+        3. Linked List
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('stack', this)">
+        4. Stack
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('queue', this)">
+        5. Queue
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('deque', this)">
+        6. Deque
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('tree', this)">
+        7. Trees
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('bst', this)">
+        8. Binary Search Tree
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('graph', this)">
+        9. Graph
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('searching', this)">
+        10. Searching
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('sorting', this)">
+        11. Sorting
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="topic-link"
+        onclick="showLesson('complexity', this)">
+        12. Time & Space Complexity
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- CONTENT -->
+  <div class="content">
+
+
+    <!-- INTRODUCTION -->
+    <div id="intro" class="lesson active">
+
+      <h1>Introduction to Data Structures</h1>
+
+      <p>
+        Data Structure ek way hai jis mein hum data ko
+        organize aur store karte hain taake data ko easily
+        access aur manage kiya ja sake.
+      </p>
+
+      <h2>Why Data Structures?</h2>
+
       <ul>
-        <li><a href="#" class="topic-link active"
+        <li>Data ko organize karne ke liye</li>
+        <li>Data ko efficiently access karne ke liye</li>
+        <li>Programs ki performance improve karne ke liye</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Array, Linked List, Stack aur Queue common
+        Data Structures hain.
+      </div>
+
+    </div>
+
+
+    <!-- ARRAY -->
+    <div id="array" class="lesson">
+
+      <h1>Arrays</h1>
+
+      <p>
+        Array ek data structure hai jo multiple values ko
+        ek hi variable mein store karta hai.
+      </p>
+
+      <h2>Example</h2>
+
+      <div class="example-box">
+        int numbers[] = {10, 20, 30, 40, 50};
+      </div>
+
+      <p>
+        Array mein har element ka ek index hota hai.
+        Pehla index usually 0 hota hai.
+      </p>
+
+    </div>
+
+
+    <!-- LINKED LIST -->
+    <div id="linkedlist" class="lesson">
+
+      <h1>Linked List</h1>
+
+      <p>
+        Linked List nodes ka collection hota hai.
+        Har node mein data aur next node ka address hota hai.
+      </p>
+
+      <h2>Types of Linked List</h2>
+
+      <ul>
+        <li>Singly Linked List</li>
+        <li>Doubly Linked List</li>
+        <li>Circular Linked List</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Node → Node → Node → NULL
+      </div>
+
+    </div>
+
+
+    <!-- STACK -->
+    <div id="stack" class="lesson">
+
+      <h1>Stack</h1>
+
+      <p>
+        Stack ek linear data structure hai jo
+        <strong>LIFO</strong> principle follow karta hai.
+      </p>
+
+      <p>
+        LIFO ka matlab hai:
+        <strong>Last In, First Out.</strong>
+      </p>
+
+      <h2>Stack Operations</h2>
+
+      <ul>
+        <li>Push</li>
+        <li>Pop</li>
+        <li>Peek</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Plates ka stack. Jo plate sab se last mein rakhi
+        jati hai, woh sab se pehle remove hoti hai.
+      </div>
+
+    </div>
+
+
+    <!-- QUEUE -->
+    <div id="queue" class="lesson">
+
+      <h1>Queue</h1>
+
+      <p>
+        Queue ek linear data structure hai jo
+        <strong>FIFO</strong> principle follow karta hai.
+      </p>
+
+      <p>
+        FIFO ka matlab hai:
+        <strong>First In, First Out.</strong>
+      </p>
+
+      <h2>Queue Operations</h2>
+
+      <ul>
+        <li>Enqueue</li>
+        <li>Dequeue</li>
+        <li>Front</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Bus ki line mein jo person pehle aata hai,
+        woh pehle bus mein enter karta hai.
+      </div>
+
+    </div>
+
+
+    <!-- DEQUE -->
+    <div id="deque" class="lesson">
+
+      <h1>Deque</h1>
+
+      <p>
+        Deque ka full form
+        <strong>Double Ended Queue</strong> hai.
+      </p>
+
+      <p>
+        Is mein insertion aur deletion dono ends se
+        ki ja sakti hai.
+      </p>
+
+      <h2>Operations</h2>
+
+      <ul>
+        <li>Insert from Front</li>
+        <li>Insert from Rear</li>
+        <li>Delete from Front</li>
+        <li>Delete from Rear</li>
+      </ul>
+
+    </div>
+
+
+    <!-- TREE -->
+    <div id="tree" class="lesson">
+
+      <h1>Trees</h1>
+
+      <p>
+        Tree ek non-linear data structure hai jo
+        hierarchical data ko represent karta hai.
+      </p>
+
+      <h2>Important Terms</h2>
+
+      <ul>
+        <li>Root</li>
+        <li>Parent</li>
+        <li>Child</li>
+        <li>Leaf</li>
+        <li>Subtree</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Family tree ek real-world example hai.
+      </div>
+
+    </div>
+
+
+    <!-- BST -->
+    <div id="bst" class="lesson">
+
+      <h1>Binary Search Tree</h1>
+
+      <p>
+        Binary Search Tree ek binary tree hota hai jisme
+        left side par smaller values aur right side par
+        larger values hoti hain.
+      </p>
+
+      <div class="example-box">
+        <strong>Rule:</strong>
+        Left &lt; Root &lt; Right
+      </div>
+
+    </div>
+
+
+    <!-- GRAPH -->
+    <div id="graph" class="lesson">
+
+      <h1>Graph</h1>
+
+      <p>
+        Graph ek non-linear data structure hai jo
+        vertices aur edges par based hota hai.
+      </p>
+
+      <h2>Types of Graph</h2>
+
+      <ul>
+        <li>Directed Graph</li>
+        <li>Undirected Graph</li>
+        <li>Weighted Graph</li>
+        <li>Unweighted Graph</li>
+      </ul>
+
+    </div>
+
+
+    <!-- SEARCHING -->
+    <div id="searching" class="lesson">
+
+      <h1>Searching</h1>
+
+      <p>
+        Searching ka matlab hai kisi particular element
+        ko data structure mein find karna.
+      </p>
+
+      <h2>Searching Techniques</h2>
+
+      <ul>
+        <li>Linear Search</li>
+        <li>Binary Search</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        Agar array mein 50 ko find karna ho,
+        to searching algorithm use kiya ja sakta hai.
+      </div>
+
+    </div>
+
+
+    <!-- SORTING -->
+    <div id="sorting" class="lesson">
+
+      <h1>Sorting</h1>
+
+      <p>
+        Sorting ka matlab data ko kisi specific order mein
+        arrange karna hai.
+      </p>
+
+      <h2>Common Sorting Algorithms</h2>
+
+      <ul>
+        <li>Bubble Sort</li>
+        <li>Selection Sort</li>
+        <li>Insertion Sort</li>
+        <li>Merge Sort</li>
+        <li>Quick Sort</li>
+      </ul>
+
+      <div class="example-box">
+        <strong>Example:</strong>
+        50, 20, 40, 10 ko ascending order mein:
+        10, 20, 40, 50
+      </div>
+
+    </div>
+
+
+    <!-- COMPLEXITY -->
+    <div id="complexity" class="lesson">
+
+      <h1>Time & Space Complexity</h1>
+
+      <h2>Time Complexity</h2>
+
+      <p>
+        Time Complexity batati hai ke input size increase
+        hone par algorithm ko kitna time lag sakta hai.
+      </p>
+
+      <h2>Space Complexity</h2>
+
+      <p>
+        Space Complexity batati hai ke algorithm ko
+        kitni memory ki zaroorat hoti hai.
+      </p>
+
+      <div class="example-box">
+        <strong>Common Big-O:</strong>
+        O(1), O(n), O(log n), O(n²)
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<script>
+
+function showLesson(id, element) {
+
+  const lessons = document.querySelectorAll(".lesson");
+
+  lessons.forEach(function(lesson) {
+    lesson.classList.remove("active");
+  });
+
+  document.getElementById(id).classList.add("active");
+
+
+  const links = document.querySelectorAll(".topic-link");
+
+  links.forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  element.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
